@@ -1,0 +1,16 @@
+.sidebar {
+    display: none;
+    min-height: calc(100vh - 10px);
+    width: 240px;
+    background-color: #0057D9;
+    font-size: 1rem;
+    font-weight: 700;
+    
+  
+    @include respond-to("medium") {
+      display: block;
+    }
+  }
+  
+
+  

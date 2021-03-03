@@ -1,0 +1,34 @@
+
+ html {
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    overflow-x: hidden;
+    background-color: #eaeaea;
+    font-family: $text-font-stack;
+  }
+  body {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  
+  a {
+    color: $text-color-navigation;
+    text-decoration: none;
+  
+    @include on-event {
+      color: $text-color;
+      text-decoration: underline;
+    }
+  }
+  

@@ -1,0 +1,48 @@
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+
+    &__content {
+      width: 100%;
+      padding: 12px 25px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  
+  
+      &__right {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+  
+        &__profile {
+          display: flex;
+          align-items: center;
+          flex-wrap: nowrap;
+          &__name {
+            display: none;
+            margin-right: 0.5rem;
+            padding-bottom: 6px;
+            font-size: 1rem;
+            font-weight: 700;
+            @include respond-to('medium') {
+              display: block;
+            }
+          }
+          &__icon {
+            &__img {
+              height: 40px;
+              width: 40px;
+              border-radius: 50%;
+              &:hover{
+                cursor:'pointer'
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  

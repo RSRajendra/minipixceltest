@@ -1,0 +1,16 @@
+.layout {
+    height: 100%;
+    font-family: $text-font-stack;
+    &__main {
+      min-height: calc(100vh - 72px);
+      display: flex;
+      flex-wrap: nowrap;
+      &__actual {
+        width: 100vw;
+        @include respond-to("medium") {
+          width: calc(100vw - 216px);
+        }
+      }
+    }
+  }
+  

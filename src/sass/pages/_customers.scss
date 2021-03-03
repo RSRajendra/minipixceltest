@@ -1,0 +1,113 @@
+.customers {
+    width: 100%;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+  
+    &__input {
+      border-color: #d8d8d8;
+      &:focus {
+        outline: none;
+        border-color: #d8d8d8;
+      }
+    }
+
+
+    &__search{
+       padding: 12px;
+       width: 300px;
+       border:1px solid #dfdfdf
+    }
+  
+    &__head-card {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #ffffff; 
+      border-radius: 8px;
+      padding: 16px;
+      border: solid 1px #d8d8d8; 
+      font-family: $text-font-stack;
+      &__head {
+        font-size: 20px;
+        font-weight: 700;
+      }
+  
+      &__button {
+        font-size: 12px;
+        padding: 12px 24px;
+        background-color: $brand-color;
+        color: #ffffff;
+        border: solid 1px $brand-color;
+        border-radius: 6px;
+        font-weight: 500;
+  
+        &:focus {
+          outline: none;
+          text-decoration: none;
+        }
+  
+        &:hover {
+          background-color: $brand-color;
+          text-decoration: none;
+          color: #ffffff;
+        }
+  
+        @include respond-to("medium") {
+          padding: 14px 42px;
+          font-size: 1rem;
+        }
+      }
+    }
+  
+    &__input {
+      width: 300px;
+      height: 48px;
+      border-radius: 4px;
+      font-size: 1rem;
+      padding: 6px 12px;
+      margin-top: 6px;
+      border: solid 1px #dfdfdf;
+  
+      &::placeholder {
+        color: #961276;
+      }
+    }
+  
+    &__table {
+      overflow-x: scroll;
+      -ms-overflow-style: none;
+      scrollbar-width: none; 
+  
+      &::-webkit-scrollbar {
+        display: none;
+      }
+  
+      &__head {
+        min-width: 100px;
+  
+        @include respond-to("medium") {
+          min-width: 0px;
+        }
+      }
+    }
+  }
+
+
+
+
+  .pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+  }
+  
+  .pagination a.active {
+    background-color: dodgerblue;
+    color: white;
+  }
+
+  
